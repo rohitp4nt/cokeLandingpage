@@ -38,7 +38,7 @@ var tl2 = gsap.timeline({scrollTrigger:{
     start: "20% 95%",
     end: "20% 50%",
     scrub: true,
-    markers: true,
+    // markers: true,
 }})
 
 tl2.from(".lemon1",{
@@ -81,7 +81,7 @@ var tl3 = gsap.timeline({scrollTrigger:{
     start: "40% 95%",
     end: "40% 50%",
     scrub: true,
-    markers: true,
+    // markers: true,
 }})
 
 tl3.from("#c2",{
