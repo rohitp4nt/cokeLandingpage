@@ -126,6 +126,7 @@ nav i{
 
 @media only screen and (max-width: 600px) {
     .one {
+     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,34 +136,36 @@ nav i{
 
     #fanta{
         position: absolute;  
-        /* margin-right: 10vh; */
+        margin-right: 4rem;
         height: 40%;
         width: 90%;
         z-index: 2;
         transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
     }
+    #orange{
+        position: absolute;
+        margin-right: -4rem;
+        width: 40%;
+        z-index: 3;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    
+    }
 
     .one h1{
+        margin-top: 10rem;
         padding-top: 50vh;
         font-size: 30vw;
         font-family: Product Sans B;
         color: #fff;
     }
+   
     
 #orange-cut{
     display: none;
 
 }
 
-#orange{
-    position: absolute;
-    width: 20%;
-    z-index: 3;
-    top: 55%;
-    right: 30%;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 
-}
 
 #leaf{
     display: none;
