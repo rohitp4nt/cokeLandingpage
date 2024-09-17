@@ -124,9 +124,9 @@ nav i{
     right: 0%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .one {
-     overflow: hidden;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,6 +136,7 @@ nav i{
 
     #fanta{
         position: absolute;  
+        overflow: hidden;
         margin-right: 4rem;
         height: 40%;
         width: 90%;
@@ -185,14 +186,12 @@ nav i{
 
 
 
-
-
-
 .two{
     display: flex;
     width: 100%;
     height: 100vh;
     background:#4d231c ;
+    overflow: hidden;
 }
 
 .lft-two, .rght-two{
@@ -222,7 +221,52 @@ nav i{
     width: 80%;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .two{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        background:#4d231c ;
+        overflow: hidden;
+    }
+    
+     .rght-two{
+        margin-left: 4vh;
+        display: flex;
+        margin-top: 10vh;
+        justify-content:flex-start;
+        display: flex;
+        gap: 5vh;
+        width: 80%;
+        height: 100%;
+    }
+    .lft-two{
+        display: none;
+
+    }
+    .lft-two svg{
+      display: none;
+    }
+    
+    .rght-two h1{
+        color: #fff;
+        font-size: 9vw;
+    }
+    
+    .rght-two p{
+        font-size: 2.3vw;
+        color: #fff;
+        width: 80%;
+    }
+}
+
+
+
+
+
 .three{
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;

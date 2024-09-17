@@ -22,9 +22,7 @@ tl.to("#orange",{
 tl.to("#leaf",{
     top:"110%",
     rotate: "130deg",
-    left: "70%",
-
-    
+    left: "70%",  
 }, 'orange')
 tl.to("#leaf2",{
     top:"110%",
@@ -33,46 +31,70 @@ tl.to("#leaf2",{
 }, 'orange')
 
 
-// var tl2 = gsap.timeline({scrollTrigger:{
-//     trigger: ".three",
-//     start: "20% 95%",
-//     end: "20% 50%",
-//     scrub: true,
-//     // markers: true,
-// }})
+gsap.matchMedia().add("(max-width: 700px)", () => {
+    var tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".two",
+            start: "0% 95%",
+            end: "70% 50%",
+            scrub: true,
+                // markers: true,
 
-// tl2.from(".lemon1",{
-//     rotate: "-90deg",
-//     left: "-100%",
-//     top: "110%"
-// }, 'ca')
-// tl2.from("#cocacola",{
-//     rotate: "360deg",
-//     top: "110%",
-//     left: "-10%",
-// }, 'ca')
+        }
+    });
+    tl.to("#fanta", {
+        top: "160%",
+        left: "30%",
+    }, 'orange')
+    .to("#orange", {
+        width: "40%",
+        opacity: 0,  
+      
+    }, 'orange')
+});
 
-// tl2.from(".lemon2",{
-//     rotate: "90deg",
-//     left: "100%",
-//     top: "110%"
-// }, 'ca')
-// tl2.from("#pepsi",{
-//     rotate: "-360deg",
-//     top: "110%",
-//     left: "100%",
-// }, 'ca')
 
-// tl2.to("#orange-cut",{
-//     width:"18%",
-//     left: "42%",
-//     top: "204%"
-// }, 'ca')
-// tl2.to("#fanta",{
-//     width:"35%",
-//     top: "210%",
-//     left: "33%",
-// }, 'ca')
+
+var tl2 = gsap.timeline({scrollTrigger:{
+    trigger: ".three",
+    start: "20% 95%",
+    end: "20% 50%",
+    scrub: true,
+    // markers: true,
+}})
+
+tl2.from(".lemon1",{
+    rotate: "-90deg",
+    left: "-100%",
+    top: "110%"
+}, 'ca')
+tl2.from("#cocacola",{
+    rotate: "360deg",
+    top: "110%",
+    left: "-10%",
+}, 'ca')
+
+tl2.from(".lemon2",{
+    rotate: "90deg",
+    left: "100%",
+    top: "110%"
+}, 'ca')
+tl2.from("#pepsi",{
+    rotate: "-360deg",
+    top: "110%",
+    left: "100%",
+}, 'ca')
+
+tl2.to("#orange-cut",{
+    width:"18%",
+    left: "42%",
+    top: "204%"
+}, 'ca')
+tl2.to("#fanta",{
+    width:"35%",
+    top: "210%",
+    left: "33%",
+}, 'ca')
 
 
 
