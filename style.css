@@ -371,3 +371,51 @@ nav i{
     height: 60%;
     margin-right: 55%;
 }
+
+
+.one, .two, .three, .four, .gallery, .faq {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Gallery Styles */
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    margin: 10px;
+    width: 200px; /* Adjust as needed */
+    height: auto;
+}
+
+/* FAQ Styles */
+.faq-item {
+    margin: 20px 0;
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-images img {
+        width: 100%; /* Make images responsive */
+    }
+}
+
+
+
+
+
+
+
